@@ -2,7 +2,9 @@ FROM phusion/baseimage:0.11
 MAINTAINER R0GGER
 
 ENV PATH /app/mistserver:$PATH
-ENV MISTSERVER=https://r.mistserver.org/dl/mistserver_64V2.14.1.tar.gz
+# ENV MISTSERVER=https://r.mistserver.org/dl/mistserver_64V2.14.1.tar.gz
+# replace Mistserver package link with the ARM one
+ENV MISTSERVER=https://r.mistserver.org/dl/mistserver_armv7V2.14.2.tar.gz
 
 # install basics
 RUN apt-get update
