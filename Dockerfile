@@ -24,5 +24,7 @@ RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 VOLUME /config /media
 EXPOSE 4242 8080 1935 554
+CMD ["/bin/bash", "-c", "echo 'n' | /usr/bin/MistController -c /config/server.conf"]
+
 
 # docker run -d --restart=always --net=host -v <path to video>:/media --name r0gger/mistserver 
