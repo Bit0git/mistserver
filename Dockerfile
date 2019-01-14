@@ -2,6 +2,7 @@
 FROM arm32v7/debian:jessie-slim
 MAINTAINER R0GGER
 
+ENV DEBIAN_FRONTEND="noninteractive" HOME="/root" TERM="xterm"
 ENV PATH /app/mistserver:$PATH
 # ENV MISTSERVER=https://r.mistserver.org/dl/mistserver_64V2.14.1.tar.gz
 # replace Mistserver package link with the ARM one
