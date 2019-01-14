@@ -1,4 +1,5 @@
-FROM phusion/baseimage:0.11
+# FROM phusion/baseimage:0.11
+FROM arm32v7/debian:jessie-slim
 MAINTAINER R0GGER
 
 ENV PATH /app/mistserver:$PATH
